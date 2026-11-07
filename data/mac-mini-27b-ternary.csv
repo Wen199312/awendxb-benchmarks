@@ -1,0 +1,12 @@
+metric,model,hw,value,unit,notes
+model_file_size,ternary-bonsai-2-27b-pq2_0,,5.95,GB,"group size 128, needs vendor-compiled binary"
+model_file_size,ternary-bonsai-2-27b-q2_0-g64,,7.21,GB,"group size 64, works on mainline llama.cpp"
+load_time,M4 Mac mini,16GB RAM,10.5,s,"loaded successfully"
+resident_memory_after_load,M4 Mac mini,16GB RAM,8.6,GB,"weights + overhead"
+tokens_generated,M4 Mac mini,16GB RAM,0,tokens,"Metal out-of-memory before first token"
+effective_bits_per_weight,ternary-bonsai-2-27b,,1.72,bits,"ternary {-1,0,+1} with group scaling"
+context_length,ternary-bonsai-2-27b,,262,K tokens,""
+vendor_bench_avg,ternary-bonsai-2-27b,,84.78,score,"14 reasoning benchmarks, vendor self-reported"
+vendor_capability_retained,ternary-bonsai-2-27b,,98.2,%,"vs full precision, vendor self-reported"
+vendor_throughput,M5 Max,,47,tokens/s,"vendor self-reported"
+vendor_throughput,RTX 5090,,143,tokens/s,"vendor self-reported"

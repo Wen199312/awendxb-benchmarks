@@ -1,15 +1,15 @@
 component,size,unit,location,notes
 model_file_on_disk,6.18,GB,disk,"GGUF, Nemotron 3.5 Bolt E4B"
-cuda0_model_buffer,3023.05,MiB,VRAM,"llama.cpp load_tensors"
-cuda0_kv_cache,168,MiB,VRAM,"128 MiB + 40 MiB"
-cuda0_compute_buffer,136.02,MiB,VRAM,"sched_reserve"
-vram_delta_measured,3596,MiB,VRAM,"total increase after load"
+cuda0_model_buffer,3023.05,MiB,VRAM,llama.cpp load_tensors
+cuda0_kv_cache,168,MiB,VRAM,128 MiB + 40 MiB
+cuda0_compute_buffer,136.02,MiB,VRAM,sched_reserve
+vram_delta_measured,3596,MiB,VRAM,total increase after load
 cpu_mapped_buffer_a,2856,MiB,RAM,"memory-mapped, stays off GPU"
 cpu_mapped_buffer_b,680,MiB,RAM,"memory-mapped, stays off GPU"
-cpu_mapped_total,3536,MiB,RAM,"2856 + 680"
-param_total,8,B,"total parameters"
-param_active,4,B,"active per forward pass"
-context_input,64,K tokens,""
-context_output,64,K tokens,""
-first_token_latency,548,ms,,"manufacturer figure"
-vram_claimed,4,GB,,"manufacturer figure; measured 3.5 GB"
+cpu_mapped_total,3536,MiB,RAM,2856 + 680
+param_total,8,B,,total parameters
+param_active,4,B,,active per forward pass
+context_input,64,K tokens,,
+context_output,64,K tokens,,
+first_token_latency,548,ms,,manufacturer figure
+vram_claimed,4,GB,,manufacturer figure; measured 3.5 GB
